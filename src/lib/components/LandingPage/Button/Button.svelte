@@ -1,16 +1,16 @@
 <script lang="ts">
 	export let title: string,
-		bgColor: string,
+		onClick: any,
 		border: string,
 		startIcon = '',
 		endIcon = '',
-		addClass = '';
+		addClass = '',
+		startIconClass = '',
+		endIconClass = ''
 </script>
 
-<button
-	class="btn uppercase gap-2 px-6 py-2 rounded text-white font-medium text-[13px] leading-[18px] tracking-[0.35px] {bgColor} {border} {addClass}"
->
-	<img src={startIcon} alt="" />
+<button on:click={onClick} class="{border} {addClass}">
+	<img src={startIcon} class={startIconClass} alt="" />
 	{title}
-	<img src={endIcon} alt="" />
+	<img src={endIcon} class={endIconClass} alt="" />
 </button>
