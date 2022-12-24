@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let name: string, image: string, summary: string;
+	export let name: string, image: string, summary: string
 </script>
 
 <div class="relative flex flex-col text-center items-center">

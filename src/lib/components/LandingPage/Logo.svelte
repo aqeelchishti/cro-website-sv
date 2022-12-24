@@ -1,7 +1,7 @@
 <script lang="ts">
-	import codeCrowLogo from '$lib/assets/images/logo/logo-white.svg';
+	export let imageSource: any, width: string, logoLink: string
 </script>
 
-<a class="" href="/">
-	<img src={codeCrowLogo} class="w-[194px]" alt="Codecrow-Logo" />
+<a class="" href={logoLink}>
+	<img src={imageSource} class={width} alt="Logo" />
 </a>
